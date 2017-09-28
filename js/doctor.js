@@ -8,7 +8,7 @@ export let Doctor = {
      type: 'GET',
      data: {
           query: issue,
-          location: newLocation,
+          location: 'or-portland',
           sort: 'full-name-desc',
           skip: 0,
           limit: '20',
@@ -23,4 +23,7 @@ export let Doctor = {
      }
    });
  },
+
+
+ 
   };

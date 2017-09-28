@@ -3,12 +3,37 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="build/css/vendor.css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Where does it hurt?</title>
   </head>
   <body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><span class="pdx">Doc Finder</span></a>
+          </div>
+    </nav>
+    <div class="container">
+      <h1>Doctor Search<small>...where all time is relative...ly fun</small></h1>
+      <div class="row form">
+       <div class="col-md-12">
+         <div class="well">
+           <form class="input-form">
+             <div class="input-group">
+               <label for="user-input"></label>
+               <input class="form-control input-lg" id="user-input" type="text" placeholder="search by condition or doctor's name">
+               <span class="input-group-btn "><button class="btn btn-danger btn-lg" type="submit">SEARCH!</button></span>
+             </div>
+           </form>
+        </div>
+      </div>
+    </div>
+    <div class="result">
+    <div class="container ">
 
+      <div id="results">
+      </div>
+    </div>
   </body>
 </html>
