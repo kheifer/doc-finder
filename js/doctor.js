@@ -1,8 +1,7 @@
 var apiKey = require('./../.env').apiKey;
 
 export let Doctor = {
-
-  doctorFInder: (issue) => {
+  doctorFinder: (issue, returnData) => {
     $.ajax({
      url: `https://api.betterdoctor.com/2016-03-01/doctors`,
      type: 'GET',
@@ -16,14 +15,15 @@ export let Doctor = {
           format: 'json'
      },
      success: function(response) {
-       console.log(response);
+       returnData(response);
   },
      error: function(error) {
       console.log(error);
+      $('#results').text("There was an error with our API. Please try again");
      }
    });
  },
 
 
- 
+
   };

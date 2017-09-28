@@ -5,3 +5,10 @@ body{
   background-attachment: fixed;
   color: black;
 }
+.container{
+  padding-top: 1.5em;
+  margin-top: 1em;
+}
+.input-form{
+  opacity: 1;
+}

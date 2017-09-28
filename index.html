@@ -6,34 +6,33 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4eQBzQPiZRrg-T2-ygRv_wNVLsrhCG18"></script>
     <title>Where does it hurt?</title>
   </head>
   <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><span class="pdx">Doc Finder</span></a>
-          </div>
-    </nav>
-    <div class="container">
+    <div class="container well">
       <h1>Doctor Search<small>...where all time is relative...ly fun</small></h1>
       <div class="row form">
        <div class="col-md-12">
          <div class="well">
            <form class="input-form">
-             <div class="input-group">
-               <label for="user-input"></label>
+             <!-- <div class="form-group">
+               <label for="location">Enter your location:</label>
+               <input class="form-control input-lg" id="location" type="text" placeholder="enter your location">
+             </div> -->
+             <!-- trouble incorporating the googleAPi for search-->
+             <div class="form-group">
+               <label for="user-input">Search Query:</label>
                <input class="form-control input-lg" id="user-input" type="text" placeholder="search by condition or doctor's name">
-               <span class="input-group-btn "><button class="btn btn-danger btn-lg" type="submit">SEARCH!</button></span>
+               <br>
+               <button class="btn btn-danger btn-md" type="submit">SEARCH!</button>
              </div>
            </form>
         </div>
       </div>
     </div>
-    <div class="result">
-    <div class="container ">
-
-      <div id="results">
-      </div>
+    <div id="results">
+    </div>
     </div>
   </body>
 </html>
